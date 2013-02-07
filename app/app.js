@@ -128,7 +128,7 @@ Ext.application({
             });
 
         var mapdemo = Ext.create('Ext.Map', {
-            useCurrentLocation:true,
+            //useCurrentLocation:true,
             mapOptions : {
                 zoom : 12,
                 mapTypeId : google.maps.MapTypeId.ROADMAP,
@@ -140,7 +140,7 @@ Ext.application({
 	  /*geo : new Ext.create('Ext.util.Geolocation', {
                 autoUpdate: true
             }),*/
-            useCurrentLocation: true,
+            
 
             plugins : [
                 new Ext.plugin.google.Tracker({
