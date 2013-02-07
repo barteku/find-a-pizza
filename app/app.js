@@ -127,7 +127,7 @@ Ext.application({
                 ]
             });
 
-        var mapdemo = Ext.create('Ext.Map', {
+        var map = new Ext.Map({
             useCurrentLocation:true,
             mapOptions : {
                 zoom : 12,
@@ -137,23 +137,8 @@ Ext.application({
                     style: google.maps.NavigationControlStyle.DEFAULT
                 }
             },
-	  geo : new Ext.create('Ext.util.Geolocation', {
-                autoUpdate: true,
-                listeners: {
-                    locationupdate: function (geo) {
-                        currentLat = geo.latitude;
-                        currentLng = geo.longitude;
-                        return new google.maps.LatLng(geo.latitude, geo.longitude);
-                    },
-                    locationerror: function (geo, bTimeout, bPermissionDenied, bLocationUnavailable, message) {
-                        if(bTimeout){
-                            alert('Helaas kunnen we uw locatie niet bepalen');
-                        }
-                        else{
-                            alert('Helaas kunnen we uw locatie niet bepalen');
-                        }
-                    }
-            }
+	  geo : new Ext.util.Geolocation({
+                autoUpdate: false
             }),
             
 
@@ -195,7 +180,7 @@ Ext.application({
         Ext.create('Ext.Panel', {
             fullscreen: true,
             layout: 'fit',
-            items: [toolbar, mapdemo]
+            items: [toolbar, map]
         });
     }
 });
