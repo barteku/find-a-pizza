@@ -20,7 +20,7 @@
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="true" />
     
-    <!--<plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />-->
+    <plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
 
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
