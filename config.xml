@@ -48,7 +48,5 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
     
-    <rim:permissions>
-        <rim:permit>read_geolocation</rim:permit>
-    </rim:permissions>
+    
 </widget>
