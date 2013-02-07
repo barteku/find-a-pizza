@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
+        id        = "com.phonegap.find-a-slice"
         version   = "2.2.0">
-    <name>Hello World</name>
+    <name>Find a slice</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        App to help you to find a pizza slice.
     </description>
 
     <author href="http://trafficdigital.com.com" email="developers@trafficdigital.com">
-        PhoneGap Team
+        Traffic Team
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />
@@ -20,7 +20,7 @@
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="true" />
     
-    <plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
+    <!--<plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />-->
 
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
