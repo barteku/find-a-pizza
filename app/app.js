@@ -137,9 +137,9 @@ Ext.application({
                     style: google.maps.NavigationControlStyle.DEFAULT
                 }
             },
-	    geo : new Ext.create('Ext.util.Geolocation', {
+	  /*geo : new Ext.create('Ext.util.Geolocation', {
                 autoUpdate: true
-            }),
+            }),*/
             useCurrentLocation: true,
 
             plugins : [
