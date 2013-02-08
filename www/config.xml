@@ -48,7 +48,10 @@
     
 </widget>-->
 
-<cordova>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.find-a-slice"
+        version   = "2.2.0">
     <name>Find a slice</name>
 
     <description>
@@ -132,4 +135,4 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
     
-</cordova>
+</widget>
